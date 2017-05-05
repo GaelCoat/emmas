@@ -1,0 +1,175 @@
+doctype html
+head
+  meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+  link(rel="icon", href="favicon.ico")
+  title Le P'tit Atelier - Salon de coiffure
+  meta(name='description', content="Le P'tit Atelier - Salon de coiffure.")
+  meta(name='Keywords', content='atelier, coiffure, salon de coiffure, coiffeur, coiffeuse')
+  link(href="./css/normalize.css", rel="stylesheet", type="text/css")
+  link(href="./css/main.css", rel="stylesheet", type="text/css")
+  link(href="./css/responsive.css", rel="stylesheet", type="text/css")
+
+body.loading
+  header
+    .row
+      .left
+        a(href='/') Le P'tit Atelier
+      .right
+        ul
+          li.scrollTo(data-scroll='intro') Concept
+          li.scrollTo(data-scroll='products') Nos produits
+          li.scrollTo(data-scroll='pricing') Tarifs
+          li.scrollTo(data-scroll='infos') Contact
+  section#home.setSize.apply-bg(data-bg='./img/hero.jpg')
+    .align
+    .centered
+      //-h1 Le P'tit Atelier
+      //-h4 Naturellement cosy
+      img.logo(src='./img/logo.svg')
+
+  section#intro.p-top(data-appear-top-offset="-150")
+    .row
+      img.col(src='./img/aside.jpg')
+      .col
+        h3 Notre concept
+        P
+          | Le P'tit Atelier, une autre façon de concevoir la coiffure. Dans une ambiance chaleureuse et conviviale, venez découvrir la coiffure au naturel.
+        p
+          | Spécialisée dans le balayage californien pour apporter douceur et lumière à vos cheveux. Vous découvrirez des colorations aux plantes 100% naturel ayurvedique. Des reﬂets divers tels que 1e cacao, le gingembre, la cannelle etc...
+        p
+          | Bonne découverte.
+  section#products.p-top(data-appear-top-offset="-150")
+    .row
+      h3 Nos produits
+      p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels. Nous travaillons principalement avec les entreptises Davines et Gaïa.
+      ul
+        li.apply-bg(data-bg='./img/products/1.png')
+          .overlay
+            .centered
+              h5 Shampoings
+              p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels.
+              a(href='http://www.couleursgaia.com/', target='_blank') Couleurs Gaïa
+        li.apply-bg(data-bg='./img/products/2.png')
+          .overlay
+            .centered
+              h5 OI Oil
+              p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels.
+              a(href='http://www.davines.com/fr/products/', target='_blank') Davines
+        li.apply-bg(data-bg='./img/products/3.png')
+          .overlay
+            .centered
+              h5 Nounou
+              p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels.
+              a(href='http://www.davines.com/fr/products/', target='_blank') Davines
+        li.apply-bg(data-bg='./img/products/4.png')
+          .overlay
+            .centered
+              h5 Minu
+              p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels.
+              a(href='http://www.davines.com/fr/products/', target='_blank') Davines
+        li.apply-bg(data-bg='./img/products/5.png')
+          .overlay
+            .centered
+              h5 Coton
+              p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels.
+              a(href='http://www.couleursgaia.com/', target='_blank') Couleurs Gaïa
+        li.apply-bg(data-bg='./img/products/6.png')
+          .overlay
+            .centered
+              h5 Instant Présent
+              p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels.
+              a(href='http://www.couleursgaia.com/', target='_blank') Couleurs Gaïa
+
+  section#pricing.p-top(data-appear-top-offset="-150")
+    .row
+      h3 Nos tarifs
+      .col
+        .each
+          span
+            | Forfait shampoing / coupe /
+            br
+            | coiffage femme
+          small 35€
+        .each
+          span
+            | Forfait étudiante
+          small 28€
+        .each.slice
+          span
+            | Forfait shampoing / coupe /
+            br
+            | coiffage homme
+          small 19€
+        .each
+          span
+            | Forfait étudiant
+          small 15€
+        .each.slice.no-bot
+          span
+            | Enfant -5 ans
+          small 10€
+        .each.legend
+          span.label (Sans shampoing)
+      .col
+        .each
+          span
+            | Forfait couleur
+            br
+            | aux 3 huiles avec coupe
+          small 72€
+        .each.slice
+          span
+            | Forfait couleur
+            br
+            | végétale avec coupe
+          small 65€
+        .each.slice
+          span
+            | Forfait couleur
+            br
+            | ayurvedique avec coupe
+          small 80€
+        .each.slice
+          span
+            | Forfait balayage
+            br
+            | avec coupe
+          small de 70 à 90€
+    .row
+      .each.legend
+        span.label.large * Supplément cheveux longs 7€ et épais 15€
+        span.label.large * Nous avons un système de carte de fidélité
+
+
+  section#infos
+    .row
+      .col
+        h5 Horraires :
+        span Lundi : 12h -18h ; mardi-jeu-ven : 9h - 18h30
+        span Samedi : 9h - 17h. Fermé le mercredi
+      .col
+        h5 Téléphone et adresse :
+        span 05 56 21 17 66 - 6 place Bernard Roumegoux
+        span 33173 Gradignan
+    #map
+  footer
+    .row
+      .left
+        span Réalisé avec
+        img(src='./img/heart.svg')
+        span par flüz&powo
+      .right
+        img(src='./img/copyright.svg')
+        span 2017 copyright le P'tit Atelier
+
+  #loader
+    .align
+    .centered
+      img.logo(src='./img/logo-black.svg')
+
+
+
+//- Webpack Bundles
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCT7W2cXe5ubk0u5LQYke2lSQqpShoxYz8')
+script(src='./vendor.bundle.js')
+script(src='./app.bundle.js')

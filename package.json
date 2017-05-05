@@ -1,0 +1,34 @@
+{
+  "name": "atelier",
+  "version": "1.0.0",
+  "description": "Much Wow",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GaelCoat/atelier.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "GaelCoat",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.3.2",
+    "grunt": "1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "pug-html-loader": "^1.0.8",
+    "webpack": "^2.3.3"
+  },
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "express": "4.15.2",
+    "jquery": "^3.0.0",
+    "pug": "^2.0.0-beta6",
+    "q": "^1.4.1",
+    "underscore": "^1.8.3"
+  }
+}
