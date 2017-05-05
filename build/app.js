@@ -21,22 +21,49 @@ const AppView = Backbone.View.extend({
   initMap: function() {
 
     var Google = window.google;
-    var zoom = 17;
+    var zoom = 10;
 
-    if (isMobile) zoom = 21;
-    var image = 'img/cursor.png';
+    if (isMobile) zoom = 11;
 
     var map = new Google.maps.Map(this.$el.find('#map').get(0), {
-      center: {lat: 44.7736811, lng: -0.6147753},
+      center: {lat: 44.8724469, lng: -1.0923236},
       scrollwheel: false,
       zoom: zoom
     });
 
-    var marker = new Google.maps.Marker({
+    var cityCircle = new Google.maps.Circle({
+      strokeColor: '#f3a2fd',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#f3a2fd',
+      fillOpacity: 0.30,
       map: map,
-      icon: image,
-      position: {lat: 44.7736811, lng: -0.6147753}
+      center: {lat: 44.8724469, lng: -1.0923236},
+      radius: 30000
     });
+
+    var cityCircle2 = new Google.maps.Circle({
+      strokeColor: '#a2e0fd',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#a2e0fd',
+      fillOpacity: 0.3,
+      map: map,
+      center: {lat: 44.8724469, lng: -1.0923236},
+      radius: 20000
+    });
+
+    var cityCircle3 = new Google.maps.Circle({
+      strokeColor: '#a2fda5',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#a2fda5',
+      fillOpacity: 0.3,
+      map: map,
+      center: {lat: 44.8724469, lng: -1.0923236},
+      radius: 10000
+    });
+
 
     return this;
   },
@@ -104,7 +131,7 @@ const AppView = Backbone.View.extend({
       ]
     })
     .all()
-    .delay(3000)
+    .delay(1000)
     .then(function(){
 
       that.$el.find('#loader').fadeOut(300);

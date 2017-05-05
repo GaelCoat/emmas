@@ -2,9 +2,10 @@ doctype html
 head
   meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
   link(rel="icon", href="favicon.ico")
-  title Le P'tit Atelier - Salon de coiffure
-  meta(name='description', content="Le P'tit Atelier - Salon de coiffure.")
+  title L'atelier d'Emma - Coiffeuse à domicile
+  meta(name='description', content="L'atelier d'Emma - Coiffeuse à domicile")
   meta(name='Keywords', content='atelier, coiffure, salon de coiffure, coiffeur, coiffeuse')
+  link(href='https://fonts.googleapis.com/css?family=Indie+Flower', rel='stylesheet')
   link(href="./css/normalize.css", rel="stylesheet", type="text/css")
   link(href="./css/main.css", rel="stylesheet", type="text/css")
   link(href="./css/responsive.css", rel="stylesheet", type="text/css")
@@ -13,145 +14,188 @@ body.loading
   header
     .row
       .left
-        a(href='/') Le P'tit Atelier
-      .right
         ul
-          li.scrollTo(data-scroll='intro') Concept
-          li.scrollTo(data-scroll='products') Nos produits
+          li.scrollTo(data-scroll='intro') Présentation
+          li.scrollTo(data-scroll='inspirations') Inspirations
           li.scrollTo(data-scroll='pricing') Tarifs
           li.scrollTo(data-scroll='infos') Contact
+      .right
+        a(href='https://www.facebook.com/domicile.fr/', target='_blank')
+          img(src='./img/facebook.svg')
+          span L'atelier d'Emma
   section#home.setSize.apply-bg(data-bg='./img/hero.jpg')
     .align
     .centered
-      //-h1 Le P'tit Atelier
-      //-h4 Naturellement cosy
-      img.logo(src='./img/logo.svg')
+      h1 L'atelier d'Emma
+      h4 Chez vous, pour vous
 
   section#intro.p-top(data-appear-top-offset="-150")
     .row
       img.col(src='./img/aside.jpg')
       .col
-        h3 Notre concept
+        h3 Présentation
         P
-          | Le P'tit Atelier, une autre façon de concevoir la coiffure. Dans une ambiance chaleureuse et conviviale, venez découvrir la coiffure au naturel.
+          | Je m'appelle Emma, je suis coiffeuse à domicile avec une expérience de plus de 13 ans. J’ai décidé de me rendre à votre domicile pour tout service coiffure femme, homme, enfant. Je suis dynamique et à votre écoute pour vous apporter tous les conseils nécessaires.
         p
-          | Spécialisée dans le balayage californien pour apporter douceur et lumière à vos cheveux. Vous découvrirez des colorations aux plantes 100% naturel ayurvedique. Des reﬂets divers tels que 1e cacao, le gingembre, la cannelle etc...
+          | Passionnée, je vous apporte toutes mes compétences et mon savoir faire pour vous satisfaire chez vous ou dans votre entreprise. Pas d'attente inutile, pas de déplacements, ni de frais de garde pour les enfants. Je posssède le matériel nécessaire pour n’importe quelle demande.
         p
-          | Bonne découverte.
-  section#products.p-top(data-appear-top-offset="-150")
+          | Chez vous pour vous.
+
+  section#inspirations.p-top(data-appear-top-offset="-150")
     .row
-      h3 Nos produits
-      p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels. Nous travaillons principalement avec les entreptises Davines et Gaïa.
-      ul
-        li.apply-bg(data-bg='./img/products/1.png')
-          .overlay
-            .centered
-              h5 Shampoings
-              p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels.
-              a(href='http://www.couleursgaia.com/', target='_blank') Couleurs Gaïa
-        li.apply-bg(data-bg='./img/products/2.png')
-          .overlay
-            .centered
-              h5 OI Oil
-              p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels.
-              a(href='http://www.davines.com/fr/products/', target='_blank') Davines
-        li.apply-bg(data-bg='./img/products/3.png')
-          .overlay
-            .centered
-              h5 Nounou
-              p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels.
-              a(href='http://www.davines.com/fr/products/', target='_blank') Davines
-        li.apply-bg(data-bg='./img/products/4.png')
-          .overlay
-            .centered
-              h5 Minu
-              p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels.
-              a(href='http://www.davines.com/fr/products/', target='_blank') Davines
-        li.apply-bg(data-bg='./img/products/5.png')
-          .overlay
-            .centered
-              h5 Coton
-              p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels.
-              a(href='http://www.couleursgaia.com/', target='_blank') Couleurs Gaïa
-        li.apply-bg(data-bg='./img/products/6.png')
-          .overlay
-            .centered
-              h5 Instant Présent
-              p Nous sélectionnons uniquement des entreprises respectueuses de l'environnement et des produits 100% naturels.
-              a(href='http://www.couleursgaia.com/', target='_blank') Couleurs Gaïa
+      h3 Mes inspirations
+      p Voici des images de coupes qui inspirent mon travail et font avancer  mes idées de création. Je passe de nombreuses heures à me tenir au courant sur les avancées et la mode dans la coiffure.
+      .mozaic
+        .col.x-12
+          img(src='./img/inspi/i1.jpg')
+        .col.x-6
+          img(src='./img/inspi/i2.jpg')
+          img(src='./img/inspi/i4.jpg')
+          img(src='./img/inspi/i6.jpg')
+        .col.x-6
+          img(src='./img/inspi/i3.jpg')
+          img(src='./img/inspi/i5.jpg')
 
   section#pricing.p-top(data-appear-top-offset="-150")
     .row
-      h3 Nos tarifs
+      h3 Tarifs
       .col
+        h5 Forfait Femme
         .each
           span
-            | Forfait shampoing / coupe /
-            br
-            | coiffage femme
-          small 35€
+            | Shampoing, brushing ou mises en plis
+          small 17€
         .each
           span
-            | Forfait étudiante
-          small 28€
-        .each.slice
-          span
-            | Forfait shampoing / coupe /
-            br
-            | coiffage homme
-          small 19€
+            | Shampoing, coupe, brushing
+          small 26€
         .each
           span
-            | Forfait étudiant
-          small 15€
-        .each.slice.no-bot
+            | Coupe seule
+          small 20€
+        .each
           span
-            | Enfant -5 ans
-          small 10€
+            | Shampoing, coloration, brushing
+          small 37€
+        .each
+          span
+            | Shampoing, coupe, coleur, brushing
+          small 47€
+        .each.no-bot
+          span
+            | Shamp., mèches ou balayage, brushing
+          small 50€
         .each.legend
-          span.label (Sans shampoing)
-      .col
+          span.label (+10 euros pour la coupe)
         .each
           span
-            | Forfait couleur
-            br
-            | aux 3 huiles avec coupe
-          small 72€
-        .each.slice
+            | Shampoing, permanente, brushing
+          small 45€
+        .each
           span
-            | Forfait couleur
-            br
-            | végétale avec coupe
-          small 65€
-        .each.slice
+            |  Shamp., permanente, coupe brushing
+          small 55€
+        .each.legend
+          span.label * Supplément cheveux longs ou épais 5€
+
+        h5 Lissage Brésilien
+        .each
           span
-            | Forfait couleur
-            br
-            | ayurvedique avec coupe
+            | Cheveux court
           small 80€
-        .each.slice
+        .each
           span
-            | Forfait balayage
+            | Cheveux mi long
+          small 110€
+        .each
+          span
+            | Cheveux long
+          small 140€
+        .each
+          span
+            | Cheveux très long
+          small 175€
+        .each.legend
+          span.label
+            | * Inclus le shampoing et le soin d'entretien.
             br
-            | avec coupe
-          small de 70 à 90€
-    .row
-      .each.legend
-        span.label.large * Supplément cheveux longs 7€ et épais 15€
-        span.label.large * Nous avons un système de carte de fidélité
+            | Coupe comprise si besoin
+
+      .col
+        h5 Forfait Homme
+        .each
+          span
+            | Shampoing, coupe, coiffage
+          small 14€
+        .each
+          span
+            | Shampoing, coloration, coupe, coiffage
+          small 28€
+
+        h5 Forfait Enfant
+        .each
+          span
+            | Coupe enfant jusqu'à 5 ans
+          small 5€
+        .each
+          span
+            | Coupe garçon de 5 à 13 ans
+          small 10€
+        .each
+          span
+            | Coupe fillette de 5 à 13 ans
+          small 15€
+
+        h5 À la Carte
+        .each
+          span
+            |  Shampoing
+          small 2€
+        .each
+          span
+            | Coupe
+          small 20€
+        .each
+          span
+            | Coloration + shampoing
+          small 22€
+        .each
+          span
+            | Mèches + shampoing
+          small 37€
+
+        h5 Forfait Mariage
+        .each
+          span
+            |  2 essais + jour J
+          small 70€
+        .each
+          span
+            | Essai suplémentaire
+          small 15€
+
+      .row
+        p.legend L'atelier d'Emma vous propose également des chèques cadeaux, ainsi qu'une carte de fidélité.
 
 
   section#infos
     .row
+      #map.col
       .col
-        h5 Horraires :
-        span Lundi : 12h -18h ; mardi-jeu-ven : 9h - 18h30
-        span Samedi : 9h - 17h. Fermé le mercredi
-      .col
-        h5 Téléphone et adresse :
-        span 05 56 21 17 66 - 6 place Bernard Roumegoux
-        span 33173 Gradignan
-    #map
+        .each
+          h5 Horraires :
+          span Lundi/mardi/jeudi/vendredi : 9h - 19h
+          span Mercredi : 9h - 11h Samedi : 9h - 17h
+        .each
+          h5 Téléphone et lieu d'intervention :
+          span 06 95 63 21 36
+          span De Bordeaux à Cestas
+        .each
+          h5 Frais de déplacements à partir du Porge :
+          span Entre 0 et 10km : pas de frais
+          span Entre 10 et 20km : 7€
+          span Entre 20 et 30km : 15€
+          span Frais de déplacements annulé pour 3 personnes.
   footer
     .row
       .left
@@ -163,9 +207,7 @@ body.loading
         span 2017 copyright le P'tit Atelier
 
   #loader
-    .align
-    .centered
-      img.logo(src='./img/logo-black.svg')
+
 
 
 
