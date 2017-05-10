@@ -13,6 +13,7 @@
 
   header .right{
     text-align: center;
+    width: 100%;
   }
 
   header .row{
@@ -21,7 +22,8 @@
   }
 
   header .right a {
-    padding: 24px 26px;
+    padding: 32px 40px;
+    border-radius: 6px;
   }
 
   header .right a img {
@@ -30,7 +32,7 @@
   }
 
   header .right a span {
-    font-size: 33px;
+    font-size: 38px;
   }
 
   header .left li{
@@ -39,7 +41,7 @@
     margin-right: 24px;
   }
 
-  header .left li:first-child{
+  header .left{
     display: none;
   }
 
