@@ -20,8 +20,6 @@ body.loading
           li.scrollTo(data-scroll='pricing') Tarifs
           li.scrollTo(data-scroll='infos') Contact
       .right
-        a(href='http://laboutiquedemma.nsproducts.com/', target='_blank')
-          span La boutique d'Emma
         a(href='https://www.facebook.com/domicile.fr/', target='_blank')
           img(src='./img/facebook.svg')
           span L'atelier d'Emma
@@ -37,11 +35,20 @@ body.loading
       .col
         h3 Présentation
         P
-          | Je m'appelle Emma, je suis coiffeuse à domicile avec une expérience de plus de 13 ans. J’ai décidé de me rendre à votre domicile pour tout service coiffure femme, homme, enfant. Je suis dynamique et à votre écoute pour vous apporter tous les conseils nécessaires.
+          | Je m’appelle Emma, je suis coiffeuse et esthéticienne. 
         p
-          | Passionnée, je vous apporte toutes mes compétences et mon savoir faire pour vous satisfaire chez vous ou dans votre entreprise. Pas d'attente inutile, pas de déplacements, ni de frais de garde pour les enfants. Je posssède le matériel nécessaire pour n’importe quelle demande.
+          | J' ai décidé de me rendre à votre domicile pour tout service coiffure (homme,femme et enfant ) et aussi l' esthétique.
+        p
+          | Je suis dynamique et à votre écoute pour vous apporter tous les conseils nécessaires.
+        p
+          | Passionnée, je vous apporte toutes mes compétences et mon savoir faire pour vous satisfaire chez vous ou dans votre entreprise.
+        p
+          | Pas d'attente inutile, pas de déplacements, ni de frais de garde pour les enfants.
+        p
+          | Je possède le matériel nécessaire pour n'importe quelle demande.
         p
           | Chez vous pour vous.
+
 
   section#inspirations.p-top(data-appear-top-offset="-150")
     .row
@@ -51,133 +58,201 @@ body.loading
         .col.x-12
           img(src='./img/inspi/i1.jpg')
         .col.x-6
-          img(src='./img/inspi/i2.jpg')
+          img(src='./img/inspi/i3.jpg')
           img(src='./img/inspi/i4.jpg')
           img(src='./img/inspi/i6.jpg')
         .col.x-6
-          img(src='./img/inspi/i3.jpg')
+          img(src='./img/inspi/i7.jpg')
+          img(src='./img/inspi/i2.jpg')
           img(src='./img/inspi/i5.jpg')
 
   section#pricing.p-top(data-appear-top-offset="-150")
     .row
       h3 Tarifs
-      .col
-        h5 Forfait Femme
-        .each
-          span
-            | Shampoing, brushing ou mises en plis
-          small 17€
-        .each
-          span
-            | Shampoing, coupe, brushing
-          small 26€
-        .each
-          span
-            | Coupe seule
-          small 20€
-        .each
-          span
-            | Shampoing, coloration, brushing
-          small 37€
-        .each
-          span
-            | Shampoing, coupe, coleur, brushing
-          small 47€
-        .each.no-bot
-          span
-            | Shamp., mèches ou balayage, brushing
-          small 50€
-        .each.legend
-          span.label (+10 euros pour la coupe)
-        .each
-          span
-            | Shampoing, permanente, brushing
-          small 45€
-        .each
-          span
-            |  Shamp., permanente, coupe brushing
-          small 55€
-        .each.legend
-          span.label * Supplément cheveux longs ou épais 5€
+      .buttons
+        .button(data-show='hair')
+          img(src='./img/scissors.svg')
+          span Tarif coiffure
+        .button(data-show='face')
+          img(src='./img/makeup.svg')
+          span Tarif esthétique
+      .wrap(data-type='hair')
+        h3 Tarifs coiffure
+        .col
+          .each
+            span
+              | Brushing
+            small 18€ / mise en plis (+3€)
+          .each
+            span
+              | Coupe brushing
+            small 28€
+          .each
+            span
+              | Coupe seule cheveux court
+            small 19€
+          .each
+            span
+              | Coupe seule cheveux long
+            small 21€
+          .each
+            span
+              | Coloration
+            small 23€
+          .each
+            span
+              | Mèches ou balayage
+            small 35€
+          .each
+            span
+              | Permanente
+            small 26€
+          .each
+            span
+              | Ombre hair
+            small 28€
+          .each.legend
+            span.label * Supplément cheveux longs ou épais 5€
 
-        h5 Lissage Brésilien
-        .each
-          span
-            | Cheveux court
-          small 80€
-        .each
-          span
-            | Cheveux mi long
-          small 110€
-        .each
-          span
-            | Cheveux long
-          small 140€
-        .each
-          span
-            | Cheveux très long
-          small 175€
-        .each.legend
-          span.label
-            | * Inclus le shampoing et le soin d'entretien.
-            br
-            | Coupe comprise si besoin
+          h5 Lissage Brésilien
+          .each
+            span
+              | Cheveux court
+            small 85€
+          .each
+            span
+              | Cheveux mi long
+            small 120€
+          .each
+            span
+              | Cheveux long
+            small 160€
+          .each
+            span
+              | Cheveux très long
+            small 200€
 
-      .col
-        h5 Forfait Homme
-        .each
-          span
-            | Shampoing, coupe, coiffage
-          small 14€
-        .each
-          span
-            | Shampoing, coloration, coupe, coiffage
-          small 28€
+        .col
+          h5 Forfait Homme
+          .each
+            span
+              | Coupe coiffage
+            small 15€
+          .each
+            span
+              | Coloration
+            small 25€
 
-        h5 Forfait Enfant
-        .each
-          span
-            | Coupe enfant jusqu'à 5 ans
-          small 5€
-        .each
-          span
-            | Coupe garçon de 5 à 13 ans
-          small 10€
-        .each
-          span
-            | Coupe fillette de 5 à 13 ans
-          small 15€
+          h5 Forfait Enfant
+          .each
+            span
+              | Coupe enfant jusqu'à 5 ans
+            small 5€
+          .each
+            span
+              | Coupe garçon de 5 à 13 ans
+            small 10€
+          .each
+            span
+              | Coupe fillette de 5 à 13 ans
+            small 12€
+          .each.legend
+            span.label Tous les tarifs sont basés sur cheveux court
 
-        h5 À la Carte
-        .each
-          span
-            |  Shampoing
-          small 2€
-        .each
-          span
-            | Coupe
-          small 20€
-        .each
-          span
-            | Coloration + shampoing
-          small 22€
-        .each
-          span
-            | Mèches + shampoing
-          small 37€
+          h5 Forfait Mariage
+          .each
+            span
+              |  2 essais + jour J
+            small 110€
+      .wrap(data-type='face')
+        h3 
+          | Tarifs esthétique 
+          span Le service esthétique est effectué avec un service coiffure uniquement 
 
-        h5 Forfait Mariage
-        .each
-          span
-            |  2 essais + jour J
-          small 70€
-        .each
-          span
-            | Essai suplémentaire
-          small 15€
+        .col
+          h5 Épilations
+          .each
+            span
+              | Sourcils ou lèvres
+            small 6€
+          .each
+            span
+              | Visage
+            small 10€
+          .each
+            span
+              | Aiselles ou maillot
+            small 9€
+          .each
+            span
+              | 1/2 jambes
+            small 12€
+          .each
+            span
+              | 3/4 jambes
+            small 15€
+          .each
+            span
+              | Jambes entières
+            small 19€
 
-      .row
-        p.legend L'atelier d'Emma vous propose également des chèques cadeaux, ainsi qu'une carte de fidélité.
+          h5 Forfait
+          .each
+            span
+              | 1/2 jambes, maillot + aisselles
+            small 25€
+          .each
+            span
+              | 3/4 jambes, maillot + aisselles
+            small 28€
+
+          h5 Manucurie
+          .each
+            span
+              | Beauté des mains
+            small 18€
+          .each.legend
+            span.label Gommage, soin des cuticules, limage, modelage
+          .each
+            span
+              | Pose de vernis
+            small 5€
+          .each
+            span
+              | Entretiens des ongles
+            small 10€
+          .each.legend
+            span.label Coupe + limage
+
+        .col
+          h5 Soin visage
+          .each
+            span
+              | Hydratant ou purifiant
+            small 40€ / 1h
+          .each.legend
+            span.label Pour tout type de peaux  
+            span.label Démaquillage, gommage, extraction des comédons si besoin, masque et modelage  
+          .each
+            span
+              | Anti-age
+            small 50€ / 1h15
+          .each.legend
+            span.label Peau mature
+            span.label Démaquillage, gommage, extraction des comédons si besoin, masque et modelage  
+          .each
+            span
+              | Soin galvanic
+            small 45€ / 25min
+          .each.legend
+            span.label Appareil servant à faire pénétrer les principe actifs dans l'hypoderme
+            span.label Peau mature ou peau mixte avec impuretés  
+          .each
+            span
+              | Soin lumispa
+            small 15€ / 10min
+          .each.legend
+            span.label Coup d'éclat
 
 
   section#infos
@@ -186,26 +261,31 @@ body.loading
       .col
         .each
           h5 Horraires :
-          span Lundi/mardi/jeudi/vendredi : 9h - 19h
-          span Mercredi : 9h - 11h Samedi : 9h - 17h
+          span Lundi et jeudi 9h -17h
+          span Mardi et vendredi 9h -19h
+          span Samedi 9h - 16h
+          span Fermé le Mercredi
         .each
           h5 Téléphone :
           span 06 95 63 21 36
         .each
           h5 Frais de déplacements à partir du Porge :
-          span Entre 0 et 10km : pas de frais
+          span Offert sur la commune du porge
+          span Entre 5 et 10km : 4€
           span Entre 10 et 20km : 7€
           span Entre 20 et 30km : 15€
-          span Frais de déplacements annulé pour 3 personnes.
+          span Frais de déplacements annulé pour 3 personnes hors enfants.
   footer
     .row
       .left
         span Réalisé avec
         img(src='./img/heart.svg')
-        span par flüz&powo
+        span
+          | par
+          a(href='http://fluzandpowo.com/', target='_blank')  flüz&powo
       .right
         img(src='./img/copyright.svg')
-        span 2017 copyright le P'tit Atelier
+        span 2018 copyright L'atelier d'Emma
 
   #loader
 

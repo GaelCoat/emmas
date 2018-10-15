@@ -5,11 +5,18 @@ const AppView = Backbone.View.extend({
 
   events: {
     'click .scrollTo': 'scrollTo',
+    'click .button': 'display',
   },
 
-  initialize: function() {
+  display: function(e) {
 
-  },
+    var type = this.$el.find(e.currentTarget).data('show');
+
+    this.$el.find(".wrap").hide();
+    this.$el.find(".wrap[data-type="+type+"]").show();
+
+    return this;
+  },    
 
   scrollTo: function(e) {
 
@@ -31,16 +38,6 @@ const AppView = Backbone.View.extend({
       zoom: zoom
     });
 
-    var cityCircle = new Google.maps.Circle({
-      strokeColor: '#f3a2fd',
-      strokeOpacity: 0.8,
-      strokeWeight: 2,
-      fillColor: '#f3a2fd',
-      fillOpacity: 0.30,
-      map: map,
-      center: {lat: 44.8724469, lng: -1.0923236},
-      radius: 30000
-    });
 
     var cityCircle2 = new Google.maps.Circle({
       strokeColor: '#a2e0fd',

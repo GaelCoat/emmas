@@ -120,11 +120,6 @@ header .right a{
   padding: 14px 15px;
 }
 
-header .right a:first-child{
-  background-color: #fff;
-  margin-right: 10px;
-}
-
 header .right a span{
   font-family: Roboto;
   color: #fff;
@@ -133,9 +128,6 @@ header .right a span{
   vertical-align: middle;
 }
 
-header .right a:first-child span{
-  color: #666;
-}
 
 
 header .right a img{
@@ -298,14 +290,91 @@ section#inspirations .row .mozaic .col.x-6:last-of-type{
 
 
 section#pricing{
-  padding: 100px 0;
+  padding: 150px 0;
   text-align: center;
   background-color: #fda2ef;
+}
+
+section#pricing .button{
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(50% - 6px);
+  padding: 80px 50px;
+  border-radius: 4px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/img/face.jpg);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 16px;
+  transform: translate(0, 48px);
+  transition: .33s ease .2s;
+  opacity: 0;
+}
+
+section#pricing.ready .button{
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+section#pricing .button:first-child{
+  background-image: url(/img/hair.jpg);
+  transition: .33s ease .1s;
+}
+
+section#pricing .button:before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.33);
+  content: "";
+}
+
+section#pricing .button span{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+section#pricing .button img{
+  height: 60px;
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+
+section#pricing .button:first-child{
+  margin-right: 12px;
 }
 
 section#pricing h3{
   color: #fff;
   margin-bottom: 0px;
+}
+
+section#pricing h3 span{
+  color: #fff;
+  font-family: Palatino;
+  font-weight: 400;
+  font-size: 21px;
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+section#pricing .wrap{
+  display: none;
+  padding-top: 32px;
 }
 
 section#pricing p.legend{
@@ -321,14 +390,15 @@ section#pricing .col{
   display: inline-block;
   vertical-align: top;
   text-align: left;
+  padding: 12px 0;
 }
 
 section#pricing .col:first-of-type{
   padding-right: 4%;
+  border-right: 1px solid rgba(255,255,255,.5);
 }
 
 section#pricing .col:nth-child(3){
-  border-left: 1px solid rgba(255,255,255,.5);
   padding-left: 4%;
 }
 
@@ -344,7 +414,7 @@ section#pricing .each.no-bot{
 
 section#pricing h5{
   font-size: 28px;
-  margin-top: 36px;
+  margin-top: 0px;
   color: #fff;
   line-height: 1.4;
   margin-bottom: 4px;
@@ -498,6 +568,12 @@ footer .right img{
 footer span{
   display: inline-block;
   vertical-align: middle;
+}
+
+footer span a{
+  cursor: pointer;
+  text-decoration: none;
+  color: #ff5a79;
 }
 
 .left{
